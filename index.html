@@ -6,96 +6,83 @@
     <meta name="description" content="Mirkamol Mirazizov's MAPD Portfolio">
     <title>Mirkamol Mirazizov - MAPD Portfolio</title>
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Mirkamol Mirazizov's Portfolio</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Mirkamol Mirazizov</h1>
+            <p>Mobile App Developer & Designer</p>
+        </div>
     </header>
 
     <!-- Profile Section -->
-    <div class="container">
-        <section class="profile text-center my-5">
-            <p>
-              Hello! I’m Mirkamol Mirazizov, a dedicated mobile app developer.
-              I graduated from the Mobile Application Development (MAPD) program at Cambrian College in Ontario, Canada. 
-              This program provided me with in-depth knowledge of building modern mobile applications using industry-standard tools and technologies.
-            </p>
-            <p>
-              Throughout my studies, I gained expertise in key areas such as Android development, cross-platform solutions, UI/UX design, 
-              and cloud integration with Firebase. This portfolio showcases the significant work I completed during the MAPD program, 
-              including key assignments, semester projects, and my capstone project.
-            </p>
-        </section>
+    <section class="profile-section">
+        <div class="profile-card">
+            <!-- <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> -->
+            <h2>About Me</h2>
+            <p>I’m Mirkamol Mirazizov, a mobile app developer with a passion for creating seamless, user-friendly applications. With experience in iOS and Android platforms, I specialize in building apps that combine functionality with a beautiful user interface.</p>
+        </div>
+    </section>
 
-        <!-- Capstone Project Section -->
-        <section class="projects">
-            <h2>Capstone Project</h2>
-            <div class="project">
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <!-- <img src="project1.jpg" alt="Home Design App" class="project-img"> -->
                 <h3>Home Design App</h3>
-                <p>The Home Design App is an Android application that allows users to explore, purchase, and visualize furniture in their homes using Augmented Reality (AR) technology. The app provides users with a rich experience by integrating Firebase for authentication, Firestore for real-time data management, and AR for immersive furniture placement.</p>
-                <button onclick="toggleDetails('capstone')">Show More</button>
-                <p id="capstone" class="hidden">
-                    <strong>Objective:</strong> To create a comprehensive home design solution where users can explore and visualize furniture in their own spaces using AR.<br>
-                    <strong>Skills Demonstrated:</strong> Android development (Kotlin), Firebase integration, Firestore real-time database, Augmented Reality (AR), and UI/UX design.<br>
-                    <strong>Challenges:</strong> Managing real-time data updates for multiple users and implementing smooth AR functionality were significant challenges, solved using Firebase's real-time capabilities and ARCore integration.<br>
-                    <strong>Significance:</strong> This project demonstrates my expertise in building a feature-rich Android application with real-time data and augmented reality, culminating my learning in the Mobile Application Development (MAPD) program.
-                </p>
+                <p>An AR-powered app that helps users visualize and purchase furniture for their homes using real-time data and augmented reality.</p>
             </div>
-        </section>
-
-        <!-- Semester Projects Section -->
-        <section class="projects">
-            <h2>Semester Projects</h2>
-            <div class="project">
+            <div class="project-card">
+                <!-- <img src="project2.jpg" alt="Habit Tracker App" class="project-img"> -->
                 <h3>Habit Tracker App</h3>
-                <p>This PowerApps-based app helps users track and improve daily habits using progress tracking and visual indicators for performance.</p>
-                <button onclick="toggleDetails('project3')">Show More</button>
-                <p id="project3" class="hidden">
-                    <strong>Objective:</strong> To assist users in tracking habits and improving behavior over time.<br>
-                    <strong>Skills Demonstrated:</strong> PowerApps logic, data integration, and cloud storage.<br>
-                    <strong>Challenges:</strong> Custom visual progress indicators were developed for tracking daily activities.<br>
-                    <strong>Significance:</strong> Shows my ability to work with low-code development environments like PowerApps to create impactful tools.
-                </p>
+                <p>This app helps users track their daily habits with visual indicators and progress reports, aiming for habit improvement over time.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2>Skills Gained</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h3>Android Development (Kotlin)</h3>
-                    <p>Experienced in building Android applications using Kotlin, ensuring optimal performance, and following industry best practices.</p>
-                    
-                    <h3>API Integration</h3>
-                    <p>Proficient in integrating third-party APIs, such as payment gateways and social media, to enhance application functionality.</p>
-                    
-                    <h3>UI/UX Design</h3>
-                    <p>Skilled in designing user-friendly interfaces that provide an intuitive experience, ensuring alignment with current UI/UX trends.</p>
-                    
-                    <!-- <h3>Firebase & Firestore</h3>
-                    <p>Hands-on experience with Firebase and Firestore, enabling real-time data handling and backend services for mobile applications.</p> -->
-                
-                </div> 
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Android Development (Kotlin)</h3>
             </div>
-        </section>
+            <div class="skill-card">
+                <h3>API Integration</h3>
+            </div>
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Firebase & Firestore</h3>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <h2>Contact</h2>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-grid">
             <div>
+                <!-- <img src="email-icon.png" alt="Email Icon" class="contact-icon"> -->
                 <p>Email: <a href="mailto:mirazizov.mirkamol@gmail.com">mirazizov.mirkamol@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/mirkamolMirazizov" target="_blank">https://github.com/mirkamolMirazizov</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/mirkamol-mirazizov-4265a0210/" target="_blank">https://www.linkedin.com/in/mirkamol-mirazizov/</a></p>
-
             </div>
-        </section>
-    </div>
+            <div>
+                <!-- <img src="github-icon.png" alt="GitHub Icon" class="contact-icon"> -->
+                <p>GitHub: <a href="https://github.com/mirkamolMirazizov" target="_blank">github.com/mirkamolMirazizov</a></p>
+            </div>
+            <div>
+                <!-- <img src="linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon"> -->
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/mirkamol-mirazizov/" target="_blank">linkedin.com/in/mirkamol-mirazizov</a></p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
