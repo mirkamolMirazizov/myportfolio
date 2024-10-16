@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+header {
+    background-color: #3862327a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+.profile {
+    text-align: center;
+    padding: 2rem 0;
+}
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.profile p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+section {
+    margin: 50px 0;
+}
+.projects, .skills {
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.project, .skill {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 0 0 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.project:hover, .skill:hover {
+    transform: translateY(-5px);
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    background-color: #3862327a;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+}
+.contact {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.contact div {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
